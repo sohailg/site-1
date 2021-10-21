@@ -103,7 +103,7 @@ section {
         margin-top: 70px;
         width: 500px;
         overflow: visible;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(sm) {
           //margin-top: 70px;
           //width: 500px;
           overflow: visible;
