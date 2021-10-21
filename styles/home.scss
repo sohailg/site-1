@@ -183,6 +183,13 @@ section {
 
     padding-top: $solution-card-height;
     min-height: 0;
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+      position: relative;
+
+      //padding-top: $solution-card-height;
+      min-height: 0;
+    }
   }
 
   &.page-steps {
