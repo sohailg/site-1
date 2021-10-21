@@ -183,7 +183,7 @@ section {
 
     padding-top: $solution-card-height;
     min-height: 0;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-down(lg) {
       padding-top: 0;
       position: relative;
 
