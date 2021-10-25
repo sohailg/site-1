@@ -8691,3 +8691,19 @@ footer {
       background-repeat: no-repeat;
       position: absolute;
       left: 0; }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00; 
+}
+  
+::-webkit-scrollbar-thumb {
+  background: #7950ed; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e2de9; 
+}
