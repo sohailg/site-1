@@ -92,3 +92,19 @@ $page-welcome-height: 50vh;
     margin-right: 0.5rem;
   }
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: $white; 
+}
+  
+::-webkit-scrollbar-thumb {
+  background: $primary; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary-purple; 
+}
