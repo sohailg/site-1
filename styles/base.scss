@@ -98,7 +98,7 @@ $page-welcome-height: 50vh;
 }
 
 ::-webkit-scrollbar-track {
-  background: $white; 
+  background: $transparent; 
 }
   
 ::-webkit-scrollbar-thumb {
@@ -106,5 +106,5 @@ $page-welcome-height: 50vh;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: $secondary-purple; 
+  background: $button-secondary; 
 }
