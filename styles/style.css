@@ -7186,44 +7186,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 /** @todo rename */
-.bg-gradient {
-  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
-
-.bg-gradient-community {
-  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
-
-.bg-black90 {
-  background-color: #22273c; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.3rem; }
-  .btn .social-link {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-right: 0.5rem; }
-
-.bg-gradient {
-  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
-
-.bg-gradient-community {
-  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
-
-.bg-black90 {
-  background-color: #22273c; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.3rem; }
-  .btn .social-link {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-right: 0.5rem; }
-
 .tabs {
   position: relative; }
   .tabs:before {
@@ -7396,25 +7358,6 @@ nav.navbar {
         margin: 0 0.5rem;
         padding: 0.5rem 2rem !important; }
 
-.bg-gradient {
-  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
-
-.bg-gradient-community {
-  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
-
-.bg-black90 {
-  background-color: #22273c; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.3rem; }
-  .btn .social-link {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-right: 0.5rem; }
-
 .animated-header {
   display: flex;
   align-items: flex-start;
@@ -7466,25 +7409,6 @@ nav.navbar {
       width: 4px;
       background-color: #15192c; }
 
-.bg-gradient {
-  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
-
-.bg-gradient-community {
-  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
-
-.bg-black90 {
-  background-color: #22273c; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.3rem; }
-  .btn .social-link {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-right: 0.5rem; }
-
 .notice-stripe {
   font-family: "DM Mono", monospace;
   box-sizing: border-box;
@@ -7535,6 +7459,15 @@ nav.navbar {
   to {
     height: 40px; } }
 
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  color: #ffffff;
+  background-color: #15192c; }
+
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
 
@@ -7554,14 +7487,17 @@ nav.navbar {
     width: 1.3rem;
     margin-right: 0.5rem; }
 
-html {
-  scroll-behavior: smooth; }
+::-webkit-scrollbar {
+  width: 5px; }
 
-body {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.7;
-  color: #ffffff;
-  background-color: #15192c; }
+::-webkit-scrollbar-track {
+  background: #ffffff00; }
+
+::-webkit-scrollbar-thumb {
+  background: #7950ed; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e2de9; }
 
 @media (min-width: 1500px) {
   .container {
@@ -7629,6 +7565,9 @@ section {
         margin-top: 70px;
         width: 500px;
         overflow: visible; }
+        @media (max-width: 767.98px) {
+          section.page-welcome .header-and-video .video {
+            overflow: visible; } }
         section.page-welcome .header-and-video .video img {
           max-width: 80vw;
           height: 400px;
@@ -7676,6 +7615,11 @@ section {
     position: relative;
     padding-top: 180px;
     min-height: 0; }
+    @media (max-width: 767.98px) {
+      section.page-welcome-solution {
+        padding-top: 0;
+        position: relative;
+        min-height: 0; } }
   section.page-steps {
     padding-top: 15vh; }
   section.page-roadmap {
@@ -8192,25 +8136,6 @@ footer {
     color: #686f8c;
     text-decoration: underline; }
 
-.bg-gradient {
-  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
-
-.bg-gradient-community {
-  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
-
-.bg-black90 {
-  background-color: #22273c; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.3rem; }
-  .btn .social-link {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-right: 0.5rem; }
-
 .page-community {
   display: flex;
   align-items: center;
@@ -8390,25 +8315,6 @@ footer {
   color: #a3a8b8;
   line-height: 1.9rem; }
 
-.bg-gradient {
-  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
-
-.bg-gradient-community {
-  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
-
-.bg-black90 {
-  background-color: #22273c; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.3rem; }
-  .btn .social-link {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-right: 0.5rem; }
-
 .features-page-feature:nth-child(odd) {
   background-color: #22273c; }
 
@@ -8484,25 +8390,6 @@ footer {
     .features-page-feature .feature-page-card .feature-image img {
       max-width: 300px; }
 
-.bg-gradient {
-  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
-
-.bg-gradient-community {
-  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
-
-.bg-black90 {
-  background-color: #22273c; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.3rem; }
-  .btn .social-link {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-right: 0.5rem; }
-
 .features-page-feature:nth-child(odd) {
   background-color: #22273c; }
 
@@ -8577,25 +8464,6 @@ footer {
     justify-content: center; }
     .features-page-feature .feature-page-card .feature-image img {
       max-width: 300px; }
-
-.bg-gradient {
-  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
-
-.bg-gradient-community {
-  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
-
-.bg-black90 {
-  background-color: #22273c; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.3rem; }
-  .btn .social-link {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-right: 0.5rem; }
 
 .pricing-page h3 {
   margin-bottom: 2rem;

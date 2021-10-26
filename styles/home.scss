@@ -12,6 +12,47 @@ body {
   background-color: $black100;
 }
 
+.bg-gradient {
+  background: linear-gradient(180deg, $black100 0%, $black90 100%);
+}
+
+.bg-gradient-community {
+  background: linear-gradient(180deg, $black90 0%, $black100 100%);
+}
+
+.bg-black90 {
+  background-color: $black90;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.3rem;
+
+  .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: $transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $button-secondary;
+}
+
 @media (min-width: 1500px) {
   .container {
     width: 70%;
