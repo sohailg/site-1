@@ -218,6 +218,14 @@ section {
     }
   }
 
+  @include media-breakpoint-down(sm) {
+    &.page-get-started {
+      .btn {
+        height: 3rem;
+      }
+    }
+  }
+
   &.page-welcome-solution {
     padding-top: 0;
     position: relative;
