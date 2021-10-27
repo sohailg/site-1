@@ -7610,6 +7610,9 @@ section {
         max-width: 180px;
         height: 2.5rem;
         flex: 1; } }
+  @media (max-width: 767.98px) {
+    section.page-get-started .btn {
+      height: 3rem; } }
   section.page-welcome-solution {
     padding-top: 0;
     position: relative;
