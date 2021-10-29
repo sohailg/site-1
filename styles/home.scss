@@ -890,9 +890,12 @@ footer {
 
   @include media-breakpoint-down(sm) {
     flex-direction: column;
-    padding: 1rem 0;
+    .sm-line-top {
+      margin-top: 1rem;
+    }
     .sm-line-bottom {
       width: 70%;
+      margin-bottom: 1rem;
     }
   }
 
