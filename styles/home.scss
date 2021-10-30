@@ -888,6 +888,17 @@ footer {
   font-size: 0.75rem;
   margin-top: 4rem;
 
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    .sm-line-top {
+      margin-top: 1rem;
+    }
+    .sm-line-bottom {
+      width: 70%;
+      margin-bottom: 1rem;
+    }
+  }
+
   a {
     color: $black40;
     text-decoration: underline;
