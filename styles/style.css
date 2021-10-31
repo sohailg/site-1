@@ -8135,6 +8135,14 @@ footer {
   color: #686f8c;
   font-size: 0.75rem;
   margin-top: 4rem; }
+  @media (max-width: 767.98px) {
+    .footer-line {
+      flex-direction: column; }
+      .footer-line .sm-line-top {
+        margin-top: 1rem; }
+      .footer-line .sm-line-bottom {
+        width: 70%;
+        margin-bottom: 1rem; } }
   .footer-line a {
     color: #686f8c;
     text-decoration: underline; }
