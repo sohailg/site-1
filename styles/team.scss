@@ -5,7 +5,7 @@
     background-image: none;
 
     .hero-bg {
-      background-image: url(../assets/images/bg/team_circle_bg.svg);
+      background-image: url(../assets/team-bg-placeholder.png);
     }
   }
 }
@@ -75,5 +75,61 @@
         background-image: url(../assets/icons/twitter_v2.svg);
       }
     }
+  }
+}
+
+.team-action-panels {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.team-action-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  min-height: 250px;
+  background: $black90;
+  border: 1px solid $black70;
+  box-shadow: 0px 44px 40px -24px rgba(20, 9, 14, 0.3);
+  border-radius: 1rem;
+  margin: 15px;
+  width: 100%;
+
+  &__icon {
+    padding-right: 1rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: $white;
+
+    span {
+      color: $secondary-turquoise;
+      &:before {
+        content: "<";
+      }
+      &:after {
+        content: ">";
+      }
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: $black10;
+    margin: 1rem 0;
   }
 }

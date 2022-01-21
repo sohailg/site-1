@@ -8589,7 +8589,7 @@ footer {
 .team-page.page-hero {
   background-image: none; }
   .team-page.page-hero .hero-bg {
-    background-image: url(../assets/images/bg/team_circle_bg.svg); }
+    background-image: url(../assets/team-bg-placeholder.png); }
 
 .team-members {
   display: flex;
@@ -8639,3 +8639,42 @@ footer {
       background-image: url(../assets/icons/github_v2.svg); }
     .team-members .team-member__links .twitter {
       background-image: url(../assets/icons/twitter_v2.svg); }
+
+.team-action-panels {
+  margin-top: 2rem;
+  width: 100%; }
+
+.team-action-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  min-height: 250px;
+  background: #22273c;
+  border: 1px solid #373d57;
+  box-shadow: 0px 44px 40px -24px rgba(20, 9, 14, 0.3);
+  border-radius: 1rem;
+  margin: 15px;
+  width: 100%; }
+  .team-action-panel__icon {
+    padding-right: 1rem; }
+  .team-action-panel__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%; }
+  .team-action-panel__title {
+    font-size: 1.5rem;
+    color: #ffffff; }
+    .team-action-panel__title span {
+      color: #41cadd; }
+      .team-action-panel__title span:before {
+        content: "<"; }
+      .team-action-panel__title span:after {
+        content: ">"; }
+  .team-action-panel__description {
+    font-size: 1rem;
+    color: #a3a8b8;
+    margin: 1rem 0; }
