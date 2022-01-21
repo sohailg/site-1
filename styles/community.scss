@@ -1,51 +1,10 @@
 @import "./base.scss";
 
-.page-community {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 0;
-  margin-top: $menu-height;
-  padding-bottom: 0;
-  padding-top: 0;
-
+.page-hero {
   background-image: url(../assets/images/bg/community-bg.svg);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(90vh - #{$menu-height});
 
-  @include media-breakpoint-down(md) {
-    height: auto;
-  }
-  // .container {
-  //   height: calc(90vh - #{$menu-height});
-  // }
-
-  .community-header {
-    max-width: 750px;
-  }
-  h1,
-  h3 {
-    color: $white;
-  }
-
-  .community-bg {
-    position: absolute;
-    right: 50px;
-    height: 70vh;
-    max-height: calc(70vh - #{$menu-height});
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+  .hero-bg {
     background-image: url(../assets/images/bg/community.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @include media-breakpoint-down(sm) {
-      position: relative;
-      right: auto;
-    }
   }
 
   @include media-breakpoint-down(sm) {
@@ -214,13 +173,17 @@
   @include font-mono-plain;
   color: $secondary-turquoise;
   font-weight: normal;
-  &:before { content: "<";}
-  &:after { content: ">";}
+  &:before {
+    content: "<";
+  }
+  &:after {
+    content: ">";
+  }
 }
 
 .btn-outline-primary {
   @include button-outline-secondary;
-  background-color: $primary
+  background-color: $primary;
 }
 .btn-outline-primary:hover {
   background-color: #5e2de9;

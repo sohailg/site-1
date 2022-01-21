@@ -1,0 +1,79 @@
+@import "./base.scss";
+
+.team-page {
+  &.page-hero {
+    background-image: none;
+
+    .hero-bg {
+      background-image: url(../assets/images/bg/team_circle_bg.svg);
+    }
+  }
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1400px;
+
+  .team-member {
+    width: calc(25% - 30px);
+    width: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px 15px 15px;
+
+    img {
+      width: 100%;
+
+      border-radius: 16px;
+    }
+
+    &__info {
+      margin-top: -30px;
+      background-color: $black100;
+      width: calc(100% - 70px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 40px 18px;
+      height: 122px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+    &__name {
+      color: $white;
+      font-size: 1.5rem;
+    }
+    &__title {
+      color: $secondary-turquoise;
+      font-size: 1rem;
+    }
+    &__links {
+      a {
+        span {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      .linkedin {
+        background-image: url(../assets/icons/linkedin_v2.svg);
+      }
+
+      .github {
+        background-image: url(../assets/icons/github_v2.svg);
+      }
+      .twitter {
+        background-image: url(../assets/icons/twitter_v2.svg);
+      }
+    }
+  }
+}
