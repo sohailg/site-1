@@ -3,6 +3,13 @@
 .team-page {
   &.page-hero {
     background-image: none;
+    .hero-header {
+      margin-left: 4rem;
+
+      @include media-breakpoint-down(md) {
+        margin-left: 0;
+      }
+    }
 
     .hero-bg {
       background-image: url(../assets/team-bg-placeholder.png);
@@ -79,9 +86,6 @@
 }
 
 .team-action-panels {
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
   margin-top: 2rem;
   width: 100%;
 }
@@ -98,7 +102,6 @@
   box-shadow: 0px 44px 40px -24px rgba(20, 9, 14, 0.3);
   border-radius: 1rem;
   margin: 15px;
-  width: 100%;
 
   &__icon {
     padding-right: 1rem;
@@ -131,5 +134,18 @@
     font-size: 1rem;
     color: $black10;
     margin: 1rem 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    justify-content: center;
+
+    &__content {
+      align-items: center;
+    }
+
+    &__description {
+      text-align: center;
+    }
   }
 }
