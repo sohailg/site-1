@@ -8656,8 +8656,8 @@ footer {
       font-size: 1rem; }
     .team-members .team-member__links a span {
       display: inline-block;
-      width: 40px;
-      height: 40px;
+      width: 24px;
+      height: 24px;
       background-repeat: no-repeat;
       background-size: cover; }
     .team-members .team-member__links .linkedin {
@@ -8669,7 +8669,9 @@ footer {
 
 .team-action-panels {
   margin-top: 2rem;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
 
 .team-action-panel {
   display: flex;
@@ -8682,7 +8684,9 @@ footer {
   border: 1px solid #373d57;
   box-shadow: 0px 44px 40px -24px rgba(20, 9, 14, 0.3);
   border-radius: 1rem;
-  margin: 15px; }
+  margin: 15px;
+  min-width: 450px;
+  flex: 1; }
   .team-action-panel__icon {
     padding-right: 1rem; }
   .team-action-panel__content {
