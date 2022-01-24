@@ -40,10 +40,9 @@
 .team-members {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 1400px;
 
   .team-member {
     width: calc(25% - 30px);
@@ -53,6 +52,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 15px 15px 15px;
+    min-width: 20%;
 
     img {
       width: 100%;
@@ -88,6 +88,10 @@
           height: 24px;
           background-repeat: no-repeat;
           background-size: cover;
+        }
+
+        &:hover {
+          text-decoration: none;
         }
       }
       .linkedin {
@@ -157,6 +161,10 @@
     font-size: 1rem;
     color: $black10;
     margin: 1rem 0;
+  }
+
+  .btn {
+    min-width: 205px;
   }
 
   @include media-breakpoint-down(md) {

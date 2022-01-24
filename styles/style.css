@@ -8621,10 +8621,9 @@ footer {
 .team-members {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
-  max-width: 1400px; }
+  flex-wrap: wrap; }
   .team-members .team-member {
     width: calc(25% - 30px);
     width: 280px;
@@ -8632,7 +8631,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 15px 15px 15px; }
+    margin: 0 15px 15px 15px;
+    min-width: 20%; }
     .team-members .team-member img {
       width: 100%;
       border-radius: 16px; }
@@ -8660,6 +8660,8 @@ footer {
       height: 24px;
       background-repeat: no-repeat;
       background-size: cover; }
+    .team-members .team-member__links a:hover {
+      text-decoration: none; }
     .team-members .team-member__links .linkedin {
       background-image: url(../assets/icons/linkedin_v2.svg); }
     .team-members .team-member__links .github {
@@ -8708,6 +8710,8 @@ footer {
     font-size: 1rem;
     color: #a3a8b8;
     margin: 1rem 0; }
+  .team-action-panel .btn {
+    min-width: 205px; }
   @media (max-width: 991.98px) {
     .team-action-panel {
       flex-direction: column;
