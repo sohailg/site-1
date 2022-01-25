@@ -7552,10 +7552,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #5e2de9; }
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .container {
-    width: 70%;
-    max-width: 1700px; } }
+    max-width: 1320px; } }
 
 h2.h2 {
   font-weight: 600;
@@ -7595,9 +7594,6 @@ section {
       section .main-title {
         font-size: 2rem !important;
         line-height: 1.5; } }
-  section .container {
-    padding-left: 24px;
-    padding-right: 24px; }
   section.page-welcome {
     min-height: 50vh;
     background-position: top left;
@@ -8621,18 +8617,20 @@ footer {
 .team-members {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap; }
   .team-members .team-member {
     width: calc(25% - 30px);
-    width: 280px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 15px 15px 15px;
     min-width: 20%; }
+    @media (max-width: 1199.98px) {
+      .team-members .team-member {
+        width: calc(50% - 30px); } }
     .team-members .team-member img {
       width: 100%;
       border-radius: 16px; }
@@ -8644,30 +8642,44 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 12px 40px 18px;
-      height: 122px;
+      padding: 14px 40px;
       border-radius: 8px;
-      white-space: nowrap; }
+      white-space: nowrap;
+      line-height: 1; }
     .team-members .team-member__name {
       color: #ffffff;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 12px; }
     .team-members .team-member__title {
       color: #41cadd;
-      font-size: 1rem; }
-    .team-members .team-member__links a span {
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .team-members .team-member__links a:hover {
-      text-decoration: none; }
+      font-size: 1rem;
+      margin-bottom: 12px; }
+    .team-members .team-member__links a {
+      display: inline-block; }
+      .team-members .team-member__links a span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .team-members .team-member__links a:hover {
+        text-decoration: none; }
     .team-members .team-member__links .linkedin {
       background-image: url(../assets/icons/linkedin_v2.svg); }
     .team-members .team-member__links .github {
       background-image: url(../assets/icons/github_v2.svg); }
     .team-members .team-member__links .twitter {
       background-image: url(../assets/icons/twitter_v2.svg); }
+    .team-members .team-member__name {
+      font-size: 1.2rem; }
+    .team-members .team-member__title {
+      font-size: 1rem; }
+    @media (max-width: 991.98px) {
+      .team-members .team-member__name {
+        font-size: 1rem; }
+      .team-members .team-member__title {
+        font-size: 0.8rem; } }
 
 .team-action-panels {
   margin-top: 2rem;
@@ -8680,14 +8692,14 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 40px;
+  padding: 32px;
   min-height: 250px;
   background: #22273c;
   border: 1px solid #373d57;
   box-shadow: 0px 44px 40px -24px rgba(20, 9, 14, 0.3);
   border-radius: 1rem;
   margin: 15px;
-  min-width: 450px;
+  min-width: 600px;
   flex: 1; }
   .team-action-panel__icon {
     padding-right: 1rem; }
@@ -8695,8 +8707,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    height: 100%; }
+    justify-content: flex-start;
+    height: 100%;
+    margin-bottom: 1rem; }
   .team-action-panel__title {
     font-size: 1.5rem;
     color: #ffffff; }
@@ -8709,14 +8722,17 @@ footer {
   .team-action-panel__description {
     font-size: 1rem;
     color: #a3a8b8;
-    margin: 1rem 0; }
+    margin-bottom: 0.5rem;
+    margin-bottom: auto;
+    display: inline-block; }
   .team-action-panel .btn {
     min-width: 205px; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 1199.98px) {
     .team-action-panel {
       flex-direction: column;
       justify-content: center; }
       .team-action-panel__content {
         align-items: center; }
       .team-action-panel__description {
-        text-align: center; } }
+        text-align: center;
+        margin-bottom: 1rem; } }

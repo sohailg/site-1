@@ -40,19 +40,22 @@
 .team-members {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 
   .team-member {
     width: calc(25% - 30px);
-    width: 280px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 15px 15px 15px;
     min-width: 20%;
+
+    @include media-breakpoint-down(lg) {
+      width: calc(50% - 30px);
+    }
 
     img {
       width: 100%;
@@ -67,21 +70,25 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 12px 40px 18px;
-      height: 122px;
+      padding: 14px 40px;
       border-radius: 8px;
       white-space: nowrap;
+      line-height: 1;
     }
     &__name {
       color: $white;
       font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 12px;
     }
     &__title {
       color: $secondary-turquoise;
       font-size: 1rem;
+      margin-bottom: 12px;
     }
     &__links {
       a {
+        display: inline-block;
         span {
           display: inline-block;
           width: 24px;
@@ -105,6 +112,23 @@
         background-image: url(../assets/icons/twitter_v2.svg);
       }
     }
+
+    @include media-breakpoint-down(xl) {
+      &__name {
+        font-size: 1.2rem;
+      }
+      &__title {
+        font-size: 1rem;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      &__name {
+        font-size: 1rem;
+      }
+      &__title {
+        font-size: 0.8rem;
+      }
+    }
   }
 }
 
@@ -120,14 +144,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 40px;
+  padding: 32px;
   min-height: 250px;
   background: $black90;
   border: 1px solid $black70;
   box-shadow: 0px 44px 40px -24px rgba(20, 9, 14, 0.3);
   border-radius: 1rem;
   margin: 15px;
-  min-width: 450px;
+  min-width: 600px;
   flex: 1;
 
   &__icon {
@@ -138,8 +162,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%;
+    margin-bottom: 1rem;
   }
 
   &__title {
@@ -160,14 +185,16 @@
   &__description {
     font-size: 1rem;
     color: $black10;
-    margin: 1rem 0;
+    margin-bottom: 0.5rem;
+    margin-bottom: auto;
+    display: inline-block;
   }
 
   .btn {
     min-width: 205px;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     flex-direction: column;
     justify-content: center;
 
@@ -177,6 +204,7 @@
 
     &__description {
       text-align: center;
+      margin-bottom: 1rem;
     }
   }
 }
