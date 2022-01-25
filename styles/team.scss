@@ -159,6 +159,10 @@
   border-radius: 1rem;
   margin: 15px;
   min-width: 600px;
+  @include media-breakpoint-down(lg) {
+    min-width: 300px;
+  }
+
   flex: 1;
 
   &__icon {

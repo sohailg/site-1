@@ -8709,6 +8709,9 @@ footer {
   margin: 15px;
   min-width: 600px;
   flex: 1; }
+  @media (max-width: 1199.98px) {
+    .team-action-panel {
+      min-width: 300px; } }
   .team-action-panel__icon {
     padding-right: 1rem; }
   .team-action-panel__content {
