@@ -54,6 +54,12 @@
       margin-bottom: 5vh;
       max-height: none;
 
+      @include media-breakpoint-down(md) {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        height: 45vh;
+      }
+
       video {
         max-width: 58%;
         max-height: 58%;

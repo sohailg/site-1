@@ -8637,6 +8637,11 @@ footer {
     margin-top: 10vh;
     margin-bottom: 5vh;
     max-height: none; }
+    @media (max-width: 991.98px) {
+      .team-page.page-hero .hero-bg {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        height: 45vh; } }
     .team-page.page-hero .hero-bg video {
       max-width: 58%;
       max-height: 58%;
