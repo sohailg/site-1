@@ -6,15 +6,35 @@
     .hero-header {
       margin-left: 24px;
       h1 {
-        font-size: 4rem;
+        font-size: 6rem;
         font-weight: 600;
       }
+
+      @include media-breakpoint-down(lg) {
+        h1 {
+          font-size: 4rem;
+        }
+      }
+
       @include media-breakpoint-down(md) {
         margin-left: 0;
         h1 {
-          font-size: 2rem;
-          text-align: left;
+          font-size: 4rem;
+          text-align: center;
           margin-left: 8px;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+        h1 {
+          font-size: 4rem;
+          text-align: center;
+        }
+      }
+      @include media-breakpoint-down(xs) {
+        h1 {
+          font-size: 2.5rem;
         }
       }
     }
@@ -50,6 +70,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
 
   .team-member {
     width: calc(25% - 30px);
@@ -81,6 +102,10 @@
       border-radius: 8px;
       white-space: nowrap;
       line-height: 1;
+
+      @include media-breakpoint-down(md) {
+        width: calc(100% - 20px);
+      }
     }
     &__name {
       color: $white;
