@@ -7510,6 +7510,7 @@ nav.navbar {
       .page-hero .hero-bg {
         max-height: 50vh;
         margin-top: 2rem;
+        margin-bottom: 2rem;
         background-position: center top; } }
 
 html {
@@ -8591,22 +8592,29 @@ footer {
 .team-page.page-hero {
   background-image: none; }
   .team-page.page-hero .hero-header {
-    margin-left: 4rem; }
+    margin-left: 24px; }
+    .team-page.page-hero .hero-header h1 {
+      font-size: 4rem;
+      font-weight: 600; }
     @media (max-width: 991.98px) {
       .team-page.page-hero .hero-header {
-        margin-left: 0; } }
+        margin-left: 0; }
+        .team-page.page-hero .hero-header h1 {
+          font-size: 2rem;
+          text-align: left;
+          margin-left: 8px; } }
   .team-page.page-hero .hero-bg {
-    background-image: url(../assets/images/bg/team-hero-bg.svg), url(../assets/images/bg/team-video-placeholder.png);
-    background-size: 100%, 67%;
+    background-image: url(../assets/images/bg/team-hero-bg.svg);
+    background-size: contain;
     background-position: center;
-    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center; }
     .team-page.page-hero .hero-bg video {
-      width: 61%;
+      max-width: 58%;
+      max-height: 58%;
       -webkit-mask-image: url(../assets/images/bg/team-video-mask.png);
       mask-image: url(../assets/images/bg/team-video-mask.png);
       -webkit-mask-size: contain;
