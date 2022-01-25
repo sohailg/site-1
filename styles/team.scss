@@ -49,6 +49,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 90vh;
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+      max-height: none;
 
       video {
         max-width: 58%;
