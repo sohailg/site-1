@@ -1,0 +1,23 @@
+.circles-bg {
+  section {
+    background: transparent;
+  }
+
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 100%;
+  background-color: $black100;
+
+  background-image: url(../assets/images/circle-blue.svg),
+    url(../assets/images/circle-red.svg),
+    url(../assets/images/circle-yellow.svg),
+    url(../assets/images/circle-purple.svg),
+    url(../assets/images/circle-green.svg);
+
+  background-repeat: no-repeat;
+  background-position: right -57vw top 70vh, left -20vw bottom -40vw,
+    right -40vw bottom -26vw, left -95vh top 120vh, left 17vw top 140vh;
+  background-size: 70vw, 50vw, 52vw, 120vh, 120vh;
+}
