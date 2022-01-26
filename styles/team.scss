@@ -6,20 +6,32 @@
     .hero-header {
       margin-left: 24px;
       h1 {
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 600;
+      }
+
+      @include media-breakpoint-down(xl) {
+        h1 {
+          font-size: 4rem;
+        }
+      }
+
+      @media (max-width: 1440px) {
+        h1 {
+          font-size: 3.5rem;
+        }
       }
 
       @include media-breakpoint-down(lg) {
         h1 {
-          font-size: 4rem;
+          font-size: 3rem;
         }
       }
 
       @include media-breakpoint-down(md) {
         margin-left: 0;
         h1 {
-          font-size: 4rem;
+          font-size: 3rem;
           text-align: center;
           margin-left: 8px;
         }
@@ -34,7 +46,7 @@
       }
       @include media-breakpoint-down(xs) {
         h1 {
-          font-size: 2.5rem;
+          font-size: 2.2rem;
         }
       }
     }

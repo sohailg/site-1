@@ -8603,16 +8603,21 @@ footer {
   .team-page.page-hero .hero-header {
     margin-left: 24px; }
     .team-page.page-hero .hero-header h1 {
-      font-size: 6rem;
+      font-size: 4rem;
       font-weight: 600; }
+    .team-page.page-hero .hero-header h1 {
+      font-size: 4rem; }
+    @media (max-width: 1440px) {
+      .team-page.page-hero .hero-header h1 {
+        font-size: 3.5rem; } }
     @media (max-width: 1199.98px) {
       .team-page.page-hero .hero-header h1 {
-        font-size: 4rem; } }
+        font-size: 3rem; } }
     @media (max-width: 991.98px) {
       .team-page.page-hero .hero-header {
         margin-left: 0; }
         .team-page.page-hero .hero-header h1 {
-          font-size: 4rem;
+          font-size: 3rem;
           text-align: center;
           margin-left: 8px; } }
     @media (max-width: 767.98px) {
@@ -8623,7 +8628,7 @@ footer {
           text-align: center; } }
     @media (max-width: 575.98px) {
       .team-page.page-hero .hero-header h1 {
-        font-size: 2.5rem; } }
+        font-size: 2.2rem; } }
   .team-page.page-hero .hero-bg {
     background-image: url(../assets/images/bg/team-hero-bg.svg);
     background-size: contain;
